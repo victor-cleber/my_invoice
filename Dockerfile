@@ -1,7 +1,7 @@
 FROM ubuntu
 
 RUN apt-get update && \
-    apt-get install -y apache2 curl && \
+    apt-get install -y apache2 curl unzip && \
     apt-get clean
 
 ENV ENV APACHE_LOCK_DIR="/var/lock"
